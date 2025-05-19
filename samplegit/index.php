@@ -15,6 +15,18 @@
 
 <body>
 
+    <table>
+        <tr>
+            <td>Distributor</td>
+            <td>:</td>
+            <td><input type="text" id="filterNamaDistributor"></td>
+        </tr>
+        <tr>
+            <td colspan="3"><button style="width: 100%;">CARI</button></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
 </body>
 
 </html>
