@@ -45,6 +45,7 @@
             <tr>
                 <td>No</td>
                 <td>Distributor</td>
+                <td>Action</td>
 
             </tr>
         </thead>

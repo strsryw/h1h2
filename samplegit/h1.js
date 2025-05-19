@@ -15,3 +15,11 @@ function getData(hal){
         }
     })
 }
+
+function edit(id){
+    alert(id);
+}
+
+function hapus(id){
+    alert(id);
+}
