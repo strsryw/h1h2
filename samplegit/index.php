@@ -41,6 +41,11 @@
 
     <table>
         <tr>
+            <td>ID</td>
+            <td>:</td>
+            <td><input type="text" id="inputId"></td>
+        </tr>
+        <tr>
             <td>Distributor</td>
             <td>:</td>
             <td><input type="text" id="inputNama"></td>
