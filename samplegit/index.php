@@ -24,6 +24,14 @@
             <td><input type="text" id="filterNamaDistributor"></td>
         </tr>
         <tr>
+            <td>Status</td>
+            <td>:</td>
+            <td><select id="filterStatus">
+                    <option value="true" selected>ACTIVE</option>
+                    <option value="false">NON ACTIVE</option>
+                </select></td>
+        </tr>
+        <tr>
             <td colspan="3"><button style="width: 100%;" onclick="getData(1)">CARI</button></td>
             <td></td>
             <td></td>
@@ -37,9 +45,7 @@
             <tr>
                 <td>No</td>
                 <td>Distributor</td>
-                <td>Status</td>
-                <td>Aktif</td>
-                <td>Cons</td>
+
             </tr>
         </thead>
         <tbody>
