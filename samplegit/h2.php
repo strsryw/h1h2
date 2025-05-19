@@ -26,5 +26,7 @@ if (!empty($mode)) {
         }
 
         echo $txtData;
+    } else if ($mode == "simpan") {
+        var_dump($_POST);
     }
 }

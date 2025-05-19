@@ -10,7 +10,7 @@ function getData(hal){
         type:'post',
         data:{mode:'getData', filterNamaDistributor, filterAktif},
         success:function(response){
-            console.log(response);
+            // console.log(response);
              $("#tblGetData").children("tbody:first").html(response);
         }
     })
@@ -22,6 +22,7 @@ function edit(id){
     var txtAktif = $('#txtAktif'+id).text();
     var txtCons = $('#txtCons'+id).text();
 
+    $('#inputId').val(id);
     $('#inputNama').val(txtNama);
     $('#selectStatus').val(txtStatus);
     $('#selectAktif').val(txtAktif);
@@ -30,4 +31,23 @@ function edit(id){
 
 function hapus(id){
     alert(id);
+}
+
+function simpan(){
+
+
+    var id = $('#inputId').val();
+    var nama = $('#inputNama').val();
+    var status = $('#selectStatus').val();
+    var aktif = $('#selectAktif').val();
+    var cons = $('#inputCons').val();
+    var mode = "simpan";
+    $.ajax({
+        url:"h2.php",
+        type:"post",
+        data:{id, nama, status, aktif, cons, mode},
+        success:function(response){
+            console.log(response);
+        }
+    })
 }
