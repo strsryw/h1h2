@@ -30,7 +30,18 @@ function edit(id){
 }
 
 function hapus(id){
-    alert(id);
+    var mode = "hapus";
+    if(confirm("Apakah anda yakin ?")){
+    $.ajax({
+        url:"h2.php",
+        type:"post",
+        data:{id, mode},
+        success:function(response){
+            console.log(response);
+        }
+    })
+    }
+     
 }
 
 function simpan(){
