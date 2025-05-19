@@ -37,9 +37,7 @@
             <tr>
                 <td>No</td>
                 <td>Distributor</td>
-                <td>Status</td>
-                <td>Aktif</td>
-                <td>Cons</td>
+
             </tr>
         </thead>
         <tbody>

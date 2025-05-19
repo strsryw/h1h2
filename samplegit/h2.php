@@ -17,10 +17,7 @@ if (!empty($mode)) {
             $txtData .= "<tr>
                             <td>" . $n . "</td>
                             <td>" . $result['nama'] . "</td>
-                            <td>" . $result['status'] . "</td>
-                            <td>" . $result['aktif'] . "</td>
-                            <td>" . $result['cons'] . "</td>
-            </tr>";
+                          ";
             $n++;
         }
 
