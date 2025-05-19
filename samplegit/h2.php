@@ -71,5 +71,7 @@ if (!empty($mode)) {
             var_dump($e->getTrace());
             $dbCon->execute("ROLLBACK");
         }
+    } else if ($mode == "hapus") {
+        var_dump($_POST);
     }
 }
