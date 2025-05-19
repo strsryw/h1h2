@@ -10,6 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script type="text/javascript" src="../functions/jquery/js/jquery.min.js"></script>
+
+    <script src="h1.js"></script>
     <title>Sampel Git</title>
 </head>
 
@@ -22,7 +24,7 @@
             <td><input type="text" id="filterNamaDistributor"></td>
         </tr>
         <tr>
-            <td colspan="3"><button style="width: 100%;">CARI</button></td>
+            <td colspan="3"><button style="width: 100%;" onclick="getData(1)">CARI</button></td>
             <td></td>
             <td></td>
         </tr>
@@ -30,7 +32,7 @@
 
     <br>
 
-    <table border="1">
+    <table border="1" id="tblGetData">
         <thead>
             <tr>
                 <td>No</td>
