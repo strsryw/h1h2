@@ -8,9 +8,10 @@ $mode = $_POST['mode'];
 if (!empty($mode)) {
     if ($mode == 'getData') {
         $filterNamaDistributor = $_POST['filterNamaDistributor'];
+        $filterStatus = $_POST['filterStatus'];
 
         $txtData = "";
-        $query = "SELECT * FROM dpfdplnew.distributors d WHERE d.nama LIKE '%$filterNamaDistributor%'";
+        $query = "SELECT * FROM dpfdplnew.distributors d WHERE d.nama LIKE '%$filterNamaDistributor%' AND d.aktif = '$filterStatus'";
         $hsl = $dbCon->execute($query);
         $n = 1;
         while ($result = $dbCon->getArray($hsl)) {
