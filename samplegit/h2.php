@@ -17,7 +17,8 @@ if (!empty($mode)) {
         while ($result = $dbCon->getArray($hsl)) {
             $txtData .= "<tr>
                             <td>" . $n . "</td>
-                            <td>" . $result['nama'] . "</td>
+                            <td id='txtNama" . $result['id'] . "'>" . $result['nama'] . "</td>
+                            <td><button onclick='edit(" . $result['id'] . ")'>Edit</button><button onclick='hapus(" . $result['id'] . ")'>Hapus</button></td>
                           ";
             $n++;
         }
