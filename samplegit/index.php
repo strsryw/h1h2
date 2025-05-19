@@ -27,6 +27,26 @@
             <td></td>
         </tr>
     </table>
+
+    <br>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <td>No</td>
+                <td>Distributor</td>
+                <td>Status</td>
+                <td>Aktif</td>
+                <td>Cons</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="99" style="text-align:center;vertical-align:middle">Data Kosong</td>
+            </tr>
+        </tbody>
+    </table>
+
 </body>
 
 </html>
