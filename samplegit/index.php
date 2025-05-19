@@ -24,17 +24,51 @@
             <td><input type="text" id="filterNamaDistributor"></td>
         </tr>
         <tr>
-            <td>Status</td>
+            <td>Aktif</td>
             <td>:</td>
-            <td><select id="filterStatus">
+            <td><select id="filterAktif" style="width: 100%;">
                     <option value="true" selected>ACTIVE</option>
                     <option value="false">NON ACTIVE</option>
                 </select></td>
         </tr>
         <tr>
             <td colspan="3"><button style="width: 100%;" onclick="getData(1)">CARI</button></td>
-            <td></td>
-            <td></td>
+
+        </tr>
+    </table>
+
+    <br>
+
+    <table>
+        <tr>
+            <td>Distributor</td>
+            <td>:</td>
+            <td><input type="text" id="inputNama"></td>
+        </tr>
+        <tr>
+            <td>Aktif</td>
+            <td>:</td>
+            <td><select id="selectAktif" style="width: 100%;">
+                    <option value="true">ACTIVE</option>
+                    <option value="false">NON ACTIVE</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td>Status</td>
+            <td>:</td>
+            <td><select id="selectStatus" style="width: 100%;">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td>Cons</td>
+            <td>:</td>
+            <td><input type="text" id="inputCons"></td>
+        </tr>
+        <tr>
+            <td colspan="3"><button style="width: 100%;" onclick="simpan()">SUBMIT</button></td>
+
         </tr>
     </table>
 
@@ -45,6 +79,9 @@
             <tr>
                 <td>No</td>
                 <td>Distributor</td>
+                <td>Status</td>
+                <td>Aktif</td>
+                <td>Cons</td>
                 <td>Action</td>
 
             </tr>
