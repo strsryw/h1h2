@@ -35,7 +35,6 @@ function hapus(id){
 
 function simpan(){
 
-
     var id = $('#inputId').val();
     var nama = $('#inputNama').val();
     var status = $('#selectStatus').val();
@@ -48,6 +47,17 @@ function simpan(){
         data:{id, nama, status, aktif, cons, mode},
         success:function(response){
             console.log(response);
+            if(response == "sukses"){
+            alert("Data berhasil disimpan");
+            $('#inputId').val('');
+            $('#inputNama').val('');
+            $('#selectStatus').val('');
+            $('#selectAktif').val('');
+            $('#inputCons').val('');
+            getData(1);
+            }else if(response == "gagal"){
+                alert("Data gagal disimpan");
+            }
         }
     })
 }
