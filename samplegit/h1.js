@@ -1,5 +1,6 @@
 $(document).ready(function(){
    getData(1);
+   alert("Test");
 });
 
 function getData(hal){
