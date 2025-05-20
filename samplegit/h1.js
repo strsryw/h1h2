@@ -1,6 +1,7 @@
 $(document).ready(function(){
    getData(1);
    alert("Test");
+   console.log("abcdefg");
 });
 
 function getData(hal){
