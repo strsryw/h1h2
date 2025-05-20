@@ -16,8 +16,7 @@
 </head>
 
 <body>
-    <h1>JUDUL UHUY</h1>
-    <p>test</p>
+
     <br>
     <table>
         <tr>
